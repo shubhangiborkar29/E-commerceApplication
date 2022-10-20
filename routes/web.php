@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('admin/dashboard',[DashboardController::class,'index']);
+
+Route::get('admin/product/create',[ProductController::class,'create'])->name('admin.product.create');
+Route::post('admin/product/store',[ProductController::class,'store'])->name('admin.product.store');
+Route::get('admin/product/table',[ProductController::class,'table'])->name('admin.product.table');
+Route::get('admin/product/edit/{id}',[ProductController::class,'edit'])->name('admin.product.edit');
+Route::post('admin/product/update/{id}',[ProductController::class,'update'])->name('admin.product.update');
+Route::get('admin/product/delete/{id}',[ProductController::class,'delete'])->name('admin.product.delete');
