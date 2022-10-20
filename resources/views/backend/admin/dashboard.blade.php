@@ -16,7 +16,7 @@
                             <div class="col-xs-7">
                                 <div class="numbers">
                                     <p>Total Visitors</p>
-                                    11022
+                                    <p>{{ $GET->count()}}</p>
                                 </div>
                             </div>
                         </div>
@@ -41,8 +41,7 @@
                             <div class="col-xs-7">
                                 <div class="numbers">
                                     <p>Products</p>
-                                    $1,345
-                                </div>
+                                    <p>{{$data->count()}}</p>                                </div>
                             </div>
                         </div>
                         <div class="footer">
@@ -66,7 +65,7 @@
                             <div class="col-xs-7">
                                 <div class="numbers">
                                     <p>Orders</p>
-                                    23
+                                   <p>{{$ENV->count()}}</p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +90,7 @@
                             <div class="col-xs-7">
                                 <div class="numbers">
                                     <p>Users</p>
-                                    45
+                                    <p>{{ $GET->count()}}</p>
                                 </div>
                             </div>
                         </div>

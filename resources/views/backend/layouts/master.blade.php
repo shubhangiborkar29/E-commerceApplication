@@ -56,13 +56,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="http://127.0.0.1:8000/admin/order/table">
                         <i class="ti-calendar"></i>
                         <p>Orders</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="http://127.0.0.1:8000/admin/user/table">
                         <i class="fa fa-users"></i>
                         <p>Users</p>
                     </a>

@@ -44,7 +44,7 @@
                                         <td>
                                            <a href="{{route('admin.product.edit',$d->id)}}"><button class="btn btn-sm btn-info ti-pencil-alt"  title="Edit"></button></a>
                                            <a href="{{route('admin.product.delete',$d->id)}}"> <button class="btn btn-sm btn-danger ti-trash" title="Delete"></button></a>
-                                            {{-- <a href="{{route('admin.product.detail',$d->id)}}"><button class="btn btn-sm btn-primary ti-view-list-alt" title="Details"></button></a> --}}
+                                            <a href="{{route('admin.product.detail',$d->id)}}"><button class="btn btn-sm btn-primary ti-view-list-alt" title="Details"></button></a>
 
                                         </td>
 
